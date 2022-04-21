@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import requests from '../Api/TMDB/request';
 
-function Suggestion({name,popularList}) {
+function Suggestion({name,List}) {
 
   
   const settings = {
@@ -29,13 +29,13 @@ function Suggestion({name,popularList}) {
      
     ]
   };
-console.log(popularList);
+console.log(List);
 
   return (
     <div className='suggestion_container'>
         <h3>    {name} </h3>
         <Slider {...settings}>
-              {popularList.results.map((element)=>{
+              {List.results.map((element)=>{
                 return(
                   <MiniBanner key={element.id} rating={element.vote_average} image={requests.fetchImage+element.backdrop_path} name={element.name || element.title} /> 
                 )

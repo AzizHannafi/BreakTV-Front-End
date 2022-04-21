@@ -21,7 +21,7 @@ function Banner() {
   return (
     <section className='container' style={{backgroundImage:`url(${ requests.fetchImage+randomBanner.backdrop_path })`}}>
         <div className='left_description'>
-            <h2 style={{color:"#ffff", backgroundColor: "transparent"}}>{randomBanner.title}</h2>
+            <h2 style={{color:"#ffff", backgroundColor: "transparent"}}>{randomBanner.title || randomBanner.name}</h2>
             <div className='rating'  style={{ backgroundColor: "transparent"}}>
                 <i className="fa-brands fa-imdb fa-2x" style={{color:"#f3ce13",backgroundColor: "transparent"}}></i>
                 <div style={{color:"#ffff"}}> {randomBanner.vote_average}</div>

@@ -18,3 +18,12 @@ export async function getTop(){
         throw(error)
     }
 }
+
+export async function getActionMovies(){
+    try {
+        const response = await axios.get(requests.fetchActionMovies)
+        return response.data
+    } catch (error) {
+        throw(error)
+    }
+}
