@@ -32,7 +32,7 @@ function Home() {
         <Suggestion name={"Top Rated"} List={TopList}/> 
       }  
       {actionMovies !=null &&
-        <Suggestion name={"ActioN mOVIES"} List={actionMovies}/> 
+        <Suggestion name={"Action Movies"} List={actionMovies}/> 
       }  
     </div>
   )
