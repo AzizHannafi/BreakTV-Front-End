@@ -1,0 +1,10 @@
+.suggestion_container{
+    margin-top: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+    color: white;
+}
+.carousel_container{
+   display: flex ;
+   justify-content: space-between;
+}

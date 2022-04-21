@@ -1,0 +1,35 @@
+
+
+.mini_banner_container{
+    margin-top: 10px;
+    width: 300px;
+    cursor: pointer;
+    margin: 10px;
+
+}
+
+.card{
+    transition: 0.7s ease;
+}
+.card:hover {
+    transform: scale(1.1);
+  }
+.image_mini_banner img{
+    height: 200px;
+    width: 300px;
+   
+}
+
+.mini_banner_rating{
+    display: flex;
+    align-items: flex-start;
+    background-color: #1A1A1A;
+    padding: 10px;
+}
+.mini_banner_rating >*{
+    margin-left: 10px;
+}
+.mini_banner_rating h3{
+    margin-left: 10px;
+    background-color: #1A1A1A;
+}
